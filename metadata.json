@@ -1,0 +1,6 @@
+{
+  "name": "Family Video Record Creator",
+  "description": "מחולל סרטונים עם כתוביות, מוזיקת רקע וסרטון סיום - משפחה וחברים לפני הקול",
+  "requestFramePermissions": ["camera", "microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

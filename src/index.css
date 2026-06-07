@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;700;900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Heebo", system-ui, -apple-system, sans-serif;
+  --font-display: "Rubik", "Heebo", sans-serif;
+  --color-isr-blue: #0038b8;
+  --color-isr-blue-hover: #002ca0;
+  --color-isr-light: #f4f7fd;
+}
+
+html, body {
+  font-family: var(--font-sans);
+  direction: rtl; /* RTL as requested since the entire app is in Hebrew */
+  background-color: var(--color-isr-light);
+}
+
+@keyframes flag-wave {
+  0% {
+    transform: rotate(0deg) translateY(0px) skewY(0deg) scale(1);
+  }
+  25% {
+    transform: rotate(1deg) translateY(-1px) skewY(0.5deg) scale(1.01);
+  }
+  50% {
+    transform: rotate(0deg) translateY(0px) skewY(0deg) scale(1);
+  }
+  75% {
+    transform: rotate(-1deg) translateY(1px) skewY(-0.5deg) scale(0.99);
+  }
+  100% {
+    transform: rotate(0deg) translateY(0px) skewY(0deg) scale(1);
+  }
+}
+
+.animate-waving-flag {
+  animation: flag-wave 3s ease-in-out infinite;
+  transform-origin: left center;
+}
